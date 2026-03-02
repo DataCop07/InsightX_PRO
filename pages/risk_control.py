@@ -9,7 +9,7 @@ st.set_page_config(page_title="UPI Risk Control", layout="wide")
 # Load CSV
 # ===========================
 try:
-    df = pd.read_csv(r"C:\Users\HP\OneDrive\Desktop\project\upi_transactions_2024.csv")
+    df = pd.read_csv(r"upi_transactions_2024.csv")
 except FileNotFoundError:
     st.error("File upi_transactions_2024.csv not found! Please check the path or upload the file.")
     st.stop()
