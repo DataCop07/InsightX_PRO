@@ -14,7 +14,7 @@ st.set_page_config(page_title="UPI Intelligence Lab", layout="wide")
 # ==========================================================
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"C:\Users\HP\OneDrive\Desktop\project\upi_transactions_2024.csv")
+    return pd.read_csv(r"upi_transactions_2024.csv")
 
 df = load_data()
 df.columns = [c.strip().replace(" ", "_").lower() for c in df.columns]
